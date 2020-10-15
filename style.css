@@ -348,15 +348,15 @@ Section Countdown
   font-size: 10rem;
 }
 
-.countdown-timer__box .hours h4 {
+.countdown-timer__box .days h4 {
   color: #fb502f;
 }
 
-.countdown-timer__box .minutes h4 {
+.countdown-timer__box .hours h4 {
   color: #3778c2;
 }
 
-.countdown-timer__box .seconds h4 {
+.countdown-timer__box .minutes h4 {
   color: #ffbd3b;
 }
 
