@@ -119,7 +119,7 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   background-image: linear-gradient(to right, #4b9fe1, #3778c2);
-  -webkit-background-clip: text;
+  background-clip: text;
   letter-spacing: 0.2rem;
   transition: all 0.5s;
 }
