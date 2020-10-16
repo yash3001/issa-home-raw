@@ -11,14 +11,25 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <script type = "text/javascript">
+            function unCheck(){
+              document.getElementById("checkbox").checked = false;
+            }
+
+            function check() {
+              let check = document.getElementById("checkbox");
+              check.checked === true ? check.checked=false : check.checked=true;
+            }
+    </script>
+
     <title>ISSA | Information System Security Association</title>
   </head>
   <body>
 
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input id="checkbox" type="checkbox" class="navigation__checkbox" id="navi-toggle">
     </input>
-        <label for="navi-toggle" class="navigation__button">
+        <label onClick="check()" id="checkboxButton" for="navi-toggle" class="navigation__button">
           <span class="navigation__icon">&nbsp;</span>
         </label>
 
@@ -26,16 +37,16 @@
 
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Know more about issa</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Next event countdown</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Meet our team</a></li>
+            <li class="navigation__item"><a onClick="unCheck()" href="#home" class="navigation__link"><span>01</span>Home</a></li>
+            <li class="navigation__item"><a onClick="unCheck()" href="#about" class="navigation__link"><span>02</span>Know more about issa</a></li>
+            <li class="navigation__item"><a onClick="unCheck()" href="#nextEvent" class="navigation__link"><span>03</span>Next event countdown</a></li>
+            <li class="navigation__item"><a onClick="unCheck()" href="#team" class="navigation__link"><span>04</span>Meet our team</a></li>
           </ul>
         </nav>
     </div>
 
     <main>
-      <header class="header">
+      <header id="home" class="header">
         <div class="header__logo-box">
           <img src="./img/issa-logo.png" alt="Logo" class="header__logo" />
         </div>
@@ -50,7 +61,7 @@
         </div>
       </header>
 
-      <section class="section-about">
+      <section id="about" class="section-about">
         <h2 class="heading-secondary u-margin-bottom-big">
           Know more about ISSA
         </h2>
@@ -78,7 +89,7 @@
         </div>
       </section>
 
-      <section class="countdown-timer">
+      <section id="nextEvent" class="countdown-timer">
         <h3 class="heading-tertiary">Next Event</h3>
         <div class="countdown-timer__box">
           <div class="days count">
@@ -98,7 +109,7 @@
         </div>
       </section>
 
-      <section class="section-team">
+      <section id="team" class="section-team">
         <h2 class="heading-secondary"> Meet the team </h2>
       </section>
 
