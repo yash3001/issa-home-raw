@@ -16,12 +16,12 @@
               document.getElementById("checkbox").checked = false;
             }
 
-            function check() {
+            function checkUncheck() {
               let check = document.getElementById("checkbox");
-              check.checked === true ? check.checked=false : check.checked=true;
+              check.checked = check.checked === true ? false : true;
             }
     </script>
-
+    
     <title>ISSA | Information System Security Association</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
     <div class="navigation">
       <input id="checkbox" type="checkbox" class="navigation__checkbox" id="navi-toggle">
     </input>
-        <label onClick="check()" id="checkboxButton" for="navi-toggle" class="navigation__button">
+        <label onClick="checkUncheck()" id="checkboxButton" for="navi-toggle" class="navigation__button">
           <span class="navigation__icon">&nbsp;</span>
         </label>
 
